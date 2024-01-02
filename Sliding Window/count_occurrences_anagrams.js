@@ -19,8 +19,7 @@ function solution(str, chr) {
             if (chrHash.get(c) == 0) count--;
         }
         const currWindow = right - left + 1;
-        if (currWindow == chr.length) {
-            // logic of sliding window(work on left element)
+        if (currWindow == chr.length) {// logic of sliding window(work on left element)
             if (count == 0) {
                 occurrence++;
             }

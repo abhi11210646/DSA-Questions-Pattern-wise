@@ -1,5 +1,4 @@
-// https://www.youtube.com/watch?v=uUXXEgK2Jh8&list=PL_z_8CaSLPWeM8BDJmIYDaoQ5zuwyxnfj&index=4
-
+// https://www.youtube.com/watch?v=KtpqeN0Goro&list=PL_z_8CaSLPWeM8BDJmIYDaoQ5zuwyxnfj&index=3
 // Q: Maximum Sum Subarray of size K
 
 
@@ -8,10 +7,8 @@ function solution(arr, k) {
     let sum = maxSum = 0;
     while (right < arr.length) {
         sum += arr[right];
-        const currWindow = right - left + 1;
-        if (currWindow == k) {
+        if (right - left + 1 == k) {
             maxSum = Math.max(sum, maxSum);
-            // logic of sliding window(work on left element)
             sum -= arr[left];
             left++; 
         }
