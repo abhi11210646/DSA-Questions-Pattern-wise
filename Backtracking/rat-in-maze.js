@@ -7,6 +7,8 @@
 // DDRDRR DRDDRR 
 // i.e. Path-1: DDRDRR and Path-2: DRDDRR
 
+// https://www.geeksforgeeks.org/rat-in-a-maze-problem-when-movement-in-all-possible-directions-is-allowed/
+
 
 function rat_in_maze(board) {
     const solution = [];
@@ -35,10 +37,11 @@ function rat_in_maze(board) {
 }
 
 const arr = [
-    [1, 0, 0, 0],
-    [1, 1, 0, 0],
-    [1, 1, 0, 0],
-    [0, 1, 1, 1]
+    [1, 0, 0, 0, 0],
+  [1, 1, 1, 1, 1],
+  [1, 1, 1, 0, 1],
+  [0, 0, 0, 0, 1],
+  [0, 0, 0, 0, 1],
 ]
 console.log(rat_in_maze(arr))
 
